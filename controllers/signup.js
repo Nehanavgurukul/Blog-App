@@ -1,6 +1,5 @@
 const MyBlogApp = require("../models/schema");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const express = require("express");
 const app = express();
 app.use(express.json());
@@ -74,4 +73,4 @@ const login = (req, res) => {
 
 
 
-module.exports = { signup, login}
+module.exports = {signup}

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config()
 
-mongoose.connect("mongodb+srv://Neha:nehamongo@123@cluster0.rnv5z.mongodb.net/Blog-App-DB?retryWrites=true&w=majority",
-    {
+mongoose.connect(process.env.MONGO_URL,{
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex : true
